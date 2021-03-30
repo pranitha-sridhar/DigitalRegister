@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".columnsSetting">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/enter_new_name"
+                    android:textSize="16sp"></TextView>
+            </TableRow>
+
+            <EditText
+                android:id="@+id/cols_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:hint="@string/new_name"
+                android:background="@drawable/corners"
+                android:inputType="textCapSentences"
+                android:text=""
+                android:padding="10dp"
+               android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:backgroundTint="#C8C8C8"></EditText>
+        </TableLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/corners"
+            android:text="@string/save"
+            android:textColor="#ffffff"
+            android:textSize="14sp"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/radiogroup"
+                android:paddingEnd="20dp"
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/radioText"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/text"
+                    android:buttonTint="#000000"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_baseline_text_format_24"
+                    android:drawableTint="#000000"
+                    android:textSize="15sp"></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/radioNum"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/numbers"
+                    android:buttonTint="#000000"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_baseline_format_list_numbered_24"
+                    android:drawableTint="#000000"
+                    android:textSize="15sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/time"
+                    android:buttonTint="#000000"
+                    android:id="@+id/radioTime"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:drawableRight="@drawable/ic_baseline_access_time_24"
+                    android:drawableTint="#000000"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/date"
+                    android:id="@+id/radioDate"
+                    android:buttonTint="#000000"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="#000000"
+                    ></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/rupees"
+                    android:drawableRight="@drawable/rupees"
+                    android:id="@+id/radioRupees"
+                    android:buttonTint="#000000"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/mobile_number"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:id="@+id/radioMobile"
+                    android:drawableRight="@drawable/ic_baseline_phone_24"
+                    android:drawableTint="#000000"
+                    android:textSize="15sp"></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/yes_no"
+                    android:id="@+id/radioToggle"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="30dp"
+                    android:drawableRight="@drawable/ic_baseline_toggle_on_24"
+                    android:drawableTint="#000000"
+                    ></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/check_box"
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:id="@+id/radioCheckbox"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="30dp"
+                    android:drawableRight="@drawable/ic_baseline_check_box_24"
+                    android:drawableTint="#000000"
+                    ></RadioButton>
+
+            </RadioGroup>
+        </TableLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/save_radio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/corners"
+            android:backgroundTint="#263CFF"
+            android:text="@string/save"
+            android:textColor="#ffffff"
+            android:textSize="14sp"></Button>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

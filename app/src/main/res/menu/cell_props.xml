@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item android:title="Delete"
+    android:icon="@drawable/ic_baseline_delete_black_24"
+    android:id="@+id/delete"
+    app:showAsAction="always"/>
+    <item android:title="Add Row Below"
+        android:icon="@drawable/addbelow"
+        android:id="@+id/below"
+        app:showAsAction="always"/>
+    <item android:title="Add Row Above"
+        android:icon="@drawable/addabove"
+        android:id="@+id/above"
+        app:showAsAction="always"/>
+    <item android:title="Copy"
+        android:icon="@drawable/ic_baseline_content_copy_24"
+        android:id="@+id/copy"
+        app:showAsAction="always"/>
+</menu>

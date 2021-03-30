@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/change_lang"
+        android:icon="@drawable/ic_baseline_g_translate_24"
+        android:id="@+id/change_lang" />
+    <item android:title="Fingerprint Lock"
+        android:icon="@drawable/ic_baseline_fingerprint_24"
+        android:id="@+id/finger_print"
+        />
+    <item android:title="@string/help"
+        android:icon="@drawable/whatapp"
+        android:id="@+id/help_feedback"
+        />
+    <item android:title="@string/share_app"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:id="@+id/share_app"
+        />
+
+</menu>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/clayout">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/new_document"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#263CFF"
+            android:gravity="center"
+            android:background="@drawable/corners"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_centerVertical="true"
+
+                app:srcCompat="@drawable/ic_baseline_add_circle_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="@string/create_new_register"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp"></TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:showFullScreenButton="true"
+        app:showSeekBar="true"
+        app:autoPlay="true"
+        android:visibility="gone"
+        android:id="@+id/videoplayer"
+        app:videoId="3uIVlLEfah8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="50dp"
+        android:id="@+id/youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:padding="40dp"
+        android:backgroundTint="#263CFF"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/corners"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/youtube_icon"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:paddingStart="5dp"
+            android:layout_toEndOf="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_use"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

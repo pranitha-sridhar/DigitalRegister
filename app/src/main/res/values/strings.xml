@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name"> Digital Register</string>
+
+    <string name="home">Home</string>
+    <string name="create_new_register">Create New Register</string>
+    <string name="how_to_use">How to Use Digital Register</string>
+    <string name="new_register">New Register</string>
+
+    <string name="rename_file">Rename File</string>
+    <string name="enter_new_name">Enter New Name</string>
+    <string name="new_name">New Name</string>
+    <string name="save">Save</string>
+    <string name="share_pdf">Share this as PDF</string>
+    <string name="delete_file">Delete File</string>
+
+    <string name="column">Column</string>
+
+    <string name="rename_column">Rename Column</string>
+    <string name="change_type">Change Column Type</string>
+    <string name="text">Text</string>
+    <string name="numbers">Numbers</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="rupees">Rupees</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="yes_no">Yes/No</string>
+    <string name="check_box">Checkbox</string>
+    <string name="show_total">Show Total</string>
+    <string name="setformula">Set Formula</string>
+    <string name="delete_column">Delete Column</string>
+
+
+    <string name="template">Template</string>
+    <string name="click_template">Click any card to see the template</string>
+    <string name="shop">Shop</string>
+    <string name="cashbook">Cashbook</string>
+    <string name="payment_received">Payment received</string>
+    <string name="household">Household</string>
+    <string name="grocery">Grocery List</string>
+    <string name="daily_spend">Daily Spend</string>
+    <string name="teachers">Teachers</string>
+    <string name="fee_register">Fee Register</string>
+    <string name="stationary_register">Stationary Register</string>
+    <string name="student_marks">Student Marks</string>
+    <string name="student">Student</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="homework">Homework</string>
+    <string name="health_fitness">Health and Fitness</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="workout_plan">Workout Plan</string>
+    <string name="cabs_transport">Cabs and Transport</string>
+    <string name="trip_register">Trip Register</string>
+    <string name="car_service">Car Service</string>
+    <string name="wedding">Wedding</string>
+    <string name="guest">Guest List</string>
+    <string name="food_menu">Food Menu</string>
+    <string name="expenditure_list">Expenditure List</string>
+    <string name="orders">Orders</string>
+    <string name="sell_register">Sell Register</string>
+    
+    
+    <string name="change_lang">Change Language</string>
+    <string name="enablefpl">Enable Fingerprint Lock</string>
+    <string name="disablefpl">Disable Fingerprint Lock</string>
+    <string name="help">Help &amp; Feedback</string>
+    <string name="share_app">Share app</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text
+    <string name="hello_blank_fragment">Hello blank fragment</string> -->
+</resources>

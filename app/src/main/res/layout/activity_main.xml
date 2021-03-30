@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@drawable/custom_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#263CFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            ></TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+<!--<RelativeLayout
+    android:id="@+id/whatsapp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    >
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/helptext"
+        android:src="@drawable/whatsapp_logo"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/help"
+            android:id="@+id/helptext"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:textColor="#263CFF"
+            ></TextView>
+    </RelativeLayout>-->
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:itemIconTint="@color/bottom_nav"
+        app:itemTextColor="@color/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
